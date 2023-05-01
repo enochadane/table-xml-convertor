@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -29,7 +29,7 @@ const userData = [
 ];
 
 function App() {
-  const [isConverted, setIsConverted] = useState(false);
+  // const [isConverted, setIsConverted] = useState(false);
 
   const convertToXml = () => {
     const xmlData = `
@@ -54,7 +54,7 @@ function App() {
     a.href = xmlUrl;
     a.download = "users.xml";
     a.click();
-    setIsConverted(true);
+    // setIsConverted(true);
 
     toast.success("Table successfully converted to XML!", {
       style: {
